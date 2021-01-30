@@ -133,5 +133,25 @@ form{
 
 form input{
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
+
+input[type="submit"] {
+    height: 41px;
+    border-radius: 5px;
+    background-color: #dc143c;;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: .5s all ease;
+
+}
+
+input[type="submit"]:hover{
+    color: #dc143c;
+    background: none !important;
+    border: 1px solid #dc143c;
+    transition: .5s all ease;
+}
+
