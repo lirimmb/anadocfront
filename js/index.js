@@ -6,8 +6,7 @@ function toggleMenu() {
         x.style.display = "block";
     } else {
         x.style.display = "none";
+        document.getElementById("main-id").style.width = "100%";
     }
-
-    document.getElementById("main-id").style.width = "100%";
 
 }
