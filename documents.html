@@ -1,14 +1,16 @@
 <html>
     <head>
         <title>Dashboard - ANADOCMAN</title>
-        <link rel="stylesheet" href="./css/documents.css">
+        
+        <link rel="stylesheet" href="/css/documents.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+
 
     </head>
 
     <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./js/index.js"></script>
+        
 
         <section class="headerbar">
             <div class="left-side">  
@@ -35,11 +37,14 @@
                 <div class="upload">
                     <h3>Upload a file</h3>
                     <h5 style="text-align: center;font-weight: 200;">Please choose the file you want to upload then click the 'Upload' button</h2>
-                    
-                        <form id="singleUploadForm">
-                        <input type="file" id="myFile" name="filename">
-                        <button type="submit" class="primary submit-btn">Submit</button>
-                        <!---<input type="submit" value="Upload">-->
+                        
+                        
+                        <form id="singleUploadForm" name="singleUploadForm">
+
+                            
+                            <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />
+                            
+                            <button type="submit" class="primary submit-btn">Submit</button>
                         </form>
                         
                     <div class="upload-response">
@@ -49,6 +54,7 @@
                 </div>
             </div>
         </section>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
