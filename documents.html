@@ -7,7 +7,7 @@
     </head>
 
     <body>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./js/index.js"></script>
 
         <section class="headerbar">
@@ -35,10 +35,17 @@
                 <div class="upload">
                     <h3>Upload a file</h3>
                     <h5 style="text-align: center;font-weight: 200;">Please choose the file you want to upload then click the 'Upload' button</h2>
-                    <form action="">
+                    
+                        <form id="singleUploadForm">
                         <input type="file" id="myFile" name="filename">
-                        <input type="submit" value="Upload">
-                    </form>
+                        <button type="submit" class="primary submit-btn">Submit</button>
+                        <!---<input type="submit" value="Upload">-->
+                        </form>
+                        
+                    <div class="upload-response">
+                        <div id="singleFileUploadError"></div>
+                        <div id="singleFileUploadSuccess"></div>
+                    </div>
                 </div>
             </div>
         </section>
