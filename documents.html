@@ -2,11 +2,13 @@
     <head>
         <title>Dashboard - ANADOCMAN</title>
         
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="/css/documents.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/index.js"></script>
         
-
-
     </head>
 
     <body>
@@ -41,16 +43,44 @@
                         
                         <form id="singleUploadForm" name="singleUploadForm">
 
-                            
                             <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />
                             
-                            <button type="submit" class="primary submit-btn">Submit</button>
+                            <button type="submit" class="primary submit-btn">Upload</button>
                         </form>
-                        
                     <div class="upload-response">
                         <div id="singleFileUploadError"></div>
                         <div id="singleFileUploadSuccess"></div>
                     </div>
+                    
+                    <div class="tabela" id="tabelaid" style="display: none;">
+                        <table style="overflow: auto;">
+                            <tr>
+                              <th>File ID</th>
+                              <th>File name</th>
+                              <th>File size</th>
+                              <th>Export</th>
+                            </tr>
+                            <tr>
+                              <td id="fileid"></td>
+                              <td id="filename"></td>
+                              <td id="filesize"></td>
+                              <td id="exportid"><a href="#" id="linkid" style="display: none;"><button class="primary">Download</button></a></td>
+                            </tr>
+                          </table>
+                    </div>
+
+                    <div class="tabela2">
+                        <h3 style="font-weight: 200;float: left;">Existing files : </h3>
+                        <table style="overflow: auto" id="tabela2">
+                            <tr>
+                              <th>File ID</th>
+                              <th>File Name</th>
+                              <th>Size</th>
+                              <th id="exportid">Export</th>
+                            </tr>
+                          </table>
+                    </div>
+                    
                 </div>
             </div>
         </section>

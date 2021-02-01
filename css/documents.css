@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin: 0px;
   padding: 0px;
   background-color: #1b1c1e;
@@ -110,7 +111,7 @@ li:nth-child(3){
 .main-main{
     align-content: center;
     width: 80%; 
-    height: 100%;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: auto;
     padding: 25px;
 
 }
@@ -142,22 +143,63 @@ form input{
     margin-bottom: 30px;
 }
 
-input[type="submit"] {
+.primary{
+    width: 100%;
     height: 41px;
     border-radius: 5px;
-    background-color: #dc143c;;
+    background-color: #dc143c;
     color: white;
     border: none;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    transition: .5s all ease;
-
 }
 
-input[type="submit"]:hover{
+.primary:hover{
+    width: 100%;
     color: #dc143c;
     background: none !important;
     border: 1px solid #dc143c;
     transition: .5s all ease;
 }
+
+#exportid{
+    width: 10%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+td, th {
+    border: 1px solid #62666b;
+    text-align: left;
+    padding: 8px;
+    
+}
+
+tr{
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: beige;
+}
+
+th{
+    background-color: #dc143c;
+}
+
+tr:nth-child(odd) {
+    background-color: #4c4c4c;
+}
+
+.tabela, .tabela2{
+    margin-top: 45px;
+}
+
+
+
 
